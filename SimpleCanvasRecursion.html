@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<title></title>
+<head></head>
+<body>
+<canvas id="a_canvas" height=500 width =500 ></canvas>
+<body>
+<script>
+var canvas = document.getElementById("a_canvas");
+var c = canvas.getContext("2d");
+var x =500;
+var i = 0;
+
+while (i < 100)
+	{
+		c.strokeRect(0, 0, x, x);
+		c.translate((x/2),0);
+		c.rotate(45*Math.PI/180);
+		x = (Math.sqrt(Math.pow(x,2)/2));
+		i++;
+	}
+	
+</script>
+</html>
